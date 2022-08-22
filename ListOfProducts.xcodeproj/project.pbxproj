@@ -16,6 +16,8 @@
 		486E419828B2DE93009BFC7E /* ListOfProductsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E419728B2DE93009BFC7E /* ListOfProductsTests.swift */; };
 		486E41A228B2DE93009BFC7E /* ListOfProductsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E41A128B2DE93009BFC7E /* ListOfProductsUITests.swift */; };
 		486E41A428B2DE93009BFC7E /* ListOfProductsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E41A328B2DE93009BFC7E /* ListOfProductsUITestsLaunchTests.swift */; };
+		486E41B128B2F0A8009BFC7E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E41B028B2F0A8009BFC7E /* Product.swift */; };
+		486E41BD28B31567009BFC7E /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E41BC28B31567009BFC7E /* ProductTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		486E419D28B2DE93009BFC7E /* ListOfProductsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListOfProductsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		486E41A128B2DE93009BFC7E /* ListOfProductsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfProductsUITests.swift; sourceTree = "<group>"; };
 		486E41A328B2DE93009BFC7E /* ListOfProductsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfProductsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		486E41B028B2F0A8009BFC7E /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		486E41BC28B31567009BFC7E /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 			children = (
 				486E418028B2DE92009BFC7E /* AppDelegate.swift */,
 				486E418228B2DE92009BFC7E /* SceneDelegate.swift */,
+				486E41B028B2F0A8009BFC7E /* Product.swift */,
+				486E41BC28B31567009BFC7E /* ProductTableViewCell.swift */,
 				486E418428B2DE92009BFC7E /* ViewController.swift */,
 				486E418628B2DE92009BFC7E /* Main.storyboard */,
 				486E418928B2DE93009BFC7E /* Assets.xcassets */,
@@ -259,6 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				486E418528B2DE92009BFC7E /* ViewController.swift in Sources */,
+				486E41B128B2F0A8009BFC7E /* Product.swift in Sources */,
+				486E41BD28B31567009BFC7E /* ProductTableViewCell.swift in Sources */,
 				486E418128B2DE92009BFC7E /* AppDelegate.swift in Sources */,
 				486E418328B2DE92009BFC7E /* SceneDelegate.swift in Sources */,
 			);
