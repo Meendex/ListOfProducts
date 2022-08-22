@@ -16,7 +16,16 @@ class ProductTableViewCell: UITableViewCell {
     
     @IBOutlet weak var productDescriptionLable: UILabel!
     
-    
+    @IBOutlet weak var favButton: UIButton!
+    /*  @IBAction func favButtonClicked(_ sender: Any)
+    {
+        
+        let button = sender as! UIButton
+        button.setImage(UIImage(named:"favIcon"), for: .normal)
+        
+    }
+    */
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -27,5 +36,15 @@ class ProductTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    @IBAction func favButtonClicked(_ sender: UIButton) {
+        if favButton.tag == 0 {
+            favButton.setImage(UIImage(named: "notFavIcon"), for: .normal)
+            favButton.tag = 1
+        }
+        else {
+            favButton.setImage(UIImage(named: "favIcon"), for: .normal)
+            favButton.tag = 0
+        }
+    }
+    
 }
