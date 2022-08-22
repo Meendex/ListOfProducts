@@ -52,7 +52,7 @@ extension ViewController: UITableViewDataSource {
         if let product = products?[indexPath.row] {
             cell?.productNameLable.text = product.productName
             cell?.productPriceLable.text = product.price
-            cell?.productDescriptionLabel.text = product.description
+            cell?.productDescriptionLable.text = product.description
         
             if product.imageName.isEmpty {
                 cell?.productImageView.image = UIImage(named: "default" )
