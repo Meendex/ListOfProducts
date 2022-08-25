@@ -7,7 +7,14 @@
 
 import UIKit
 
+protocol FavoriteDelegate{
+    func didTapFav(state: Bool)
+}
+
 class ProductTableViewCell: UITableViewCell {
+    
+    
+    var state = false
 
     @IBOutlet weak var productImageView: UIImageView!
     
@@ -36,14 +43,17 @@ class ProductTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    @IBAction func favButtonClicked(_ sender: UIButton) {
-        if favButton.tag == 0 {
-            favButton.setImage(UIImage(named: "notFavIcon"), for: .normal)
-            favButton.tag = 1
+    @IBAction func favButtonClicked(_ sender: Any/*UIButton*/) {
+        
+        if state == false {
+            let button = sender as! UIButton
+            button.setImage(UIImage(named:"favIcon"), for: .normal)
+            state = true
         }
-        else {
-            favButton.setImage(UIImage(named: "favIcon"), for: .normal)
-            favButton.tag = 0
+        
+        else{
+            favButton.setImage(UIImage(named: "notFavIcon"), for: .normal)
+            state = false
         }
     }
     
