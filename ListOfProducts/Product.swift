@@ -6,16 +6,10 @@
 //
 
 import Foundation
-struct Product
-{
-  
-    
+struct Product {
     let productName: String
     let price: String
     let description: String
     let imageName: String
     var isFav: Bool = false
-    
-    
-    
 }

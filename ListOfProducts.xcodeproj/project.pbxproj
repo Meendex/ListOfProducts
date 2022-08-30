@@ -140,6 +140,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 486E41A728B2DE93009BFC7E /* Build configuration list for PBXNativeTarget "ListOfProducts" */;
 			buildPhases = (
+				481109CA28BE7F98009BD9A6 /* Run SwiftLint */,
 				486E417928B2DE92009BFC7E /* Sources */,
 				486E417A28B2DE92009BFC7E /* Frameworks */,
 				486E417B28B2DE92009BFC7E /* Resources */,
@@ -258,6 +259,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		481109CA28BE7F98009BD9A6 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		486E417928B2DE92009BFC7E /* Sources */ = {
